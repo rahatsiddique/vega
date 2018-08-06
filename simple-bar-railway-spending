@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": "Public spending on railways, per head 2016/17",
+  "height": 300,
+  "width": 300,
+  "data": {
+    "values": [
+      {"Region": "East Midlands","£": 70}, {"Region": "North East","£": 110}, {"Region": "Yorks & Humber","£": 137},
+      {"Region": "South West","£": 136}, {"Region": "East","£": 144}, {"Region": "West Midlands","£": 150},
+      {"Region": "North West","£": 175}, {"Region": "South East","£": 201}, {"Region": "London","£": 773}
+    ]
+  },
+
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Region", "type": "ordinal", "sort":["East Midlands", "North East", "Yorks & Humber", "South West", "East", "West Midlands", "North West", "South East", "London"]},
+    "y": {"field": "£", "type": "quantitative"},
+    "color": {"value": "#008080"}
+  }
+}
