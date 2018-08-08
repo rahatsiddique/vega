@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/OECD_(2016)_Infrastructure_investment_rail.csv"},
+
+"title": {
+    "text": "Infrastructure investment, rail (1995 - 2016)",
+    "anchor": "start",
+    "color": "navy"
+  },
+  "height": 500,
+  "width": 500,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "£", "type": "quantitative"},
+    "color": {"field": "Country", "type": "nominal"}
+  }
+}
