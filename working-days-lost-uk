@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/Working%20days%20lost%20in%20the%20UK.csv"},
+
+"title": {
+    "text": "Working days lost in the UK due to strike action (1996 - 2017) | ONS",
+
+    "anchor": "start",
+    "color": "navy"
+  },
+  "height": 500,
+  "width": 500,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Days (000s)", "type": "quantitative"},
+    "color": {"field": "Sector", "scale": {"range": ["#011f4b", "#008080"]},  "type": "nominal"}
+  }
+}
