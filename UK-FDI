@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/Net%20UK%20FDI.csv"},
+  "mark": "bar",
+
+  "title":"Net UK foreign direct investment (FDI)",
+  "width": 500,
+  "height": 500,
+
+  "encoding": {
+    "x": {
+      "timeUnit" :"year",
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {"title": "Year"}
+    },
+    "y": {
+      "field": "Net FDI",
+      "title": "Net FDI",
+
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Credit", "Debit"],
+        "range": ["#a0aabf","#35a7bf"]
+      },
+      "legend": {"title": "Type"}
+    }
+  }
+}
