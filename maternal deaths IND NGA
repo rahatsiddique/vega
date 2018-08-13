@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Maternal moratality. The death of a woman while pregnant or within 42 days of termination of pregnancy, irrespective of the duration and site of the pregnancy ",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/Material%20Deaths%20IND%20NGA.csv"},
+  "title": "Maternal mortality | World Bank",
+  "height": 500,
+  "width": 500,
+
+  "mark": "line",
+  "encoding": {
+    "x": {
+        "field": "Year", 
+        "type": "temporal"},
+    
+    "y": {
+        "field": "Deaths", 
+        "type": "quantitative", 
+        "scale": {"domain": [0, 180000]}},
+        "color": {"field": "Country", "scale":{"range":["#005b96","#58a27c"]}, "type": "nominal"}
+  }
+}
