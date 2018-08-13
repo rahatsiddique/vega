@@ -1,0 +1,15 @@
+{"$schema":"https://vega.github.io/schema/vega-lite/v2.json","data":{"format":{"type":"csv"},
+
+"url":"https://raw.githubusercontent.com/rahatsiddique/vega/master/GDP%20per%20capita.csv"},
+
+"description":"GDP per capita ARG  IND  JPN UK",
+
+"encoding":
+{"color":{"field":"Country","scale":{"range":["#011f4b","#f09f61","#a0aabf","#008080"]},
+
+"type":"nominal"},
+"x":{"field":"Year","type":"temporal"},
+"y":{"field":"GDP per capita","scale":{"domain":[0,55000]},"type":"quantitative"}},
+"height":500,
+"mark":"line",
+"title":{"anchor":"start","color":"navy","text":"GDP per capita | IMF"},"width":500}
