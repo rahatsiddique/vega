@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Mean commute times in the UK, from home to work, 2016. Source: ONS",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/mean%20commute%20times%20(mins).csv"
+  },
+
+  "mark": "bar",
+  "height": 500,
+  "width": 500,
+  
+  "encoding": {
+    "x": {
+      "field": "Local authority", 
+      "type": "ordinal", "sort":[], 
+      "title": "Local authority"},
+
+    "y": {
+      "field": "Mean", 
+      "type": "quantitative", 
+      "title": "Time (mins)"},
+      
+    "color": {
+      "field": "Local authority", 
+      "scale": {"range": ["#011f4b", "#008080", "#93b7d5", "#a0aabf", "#005b96", "#4ab0a3"]},  
+      "type": "nominal",
+      "legend": null}
+    
+  }
+}
