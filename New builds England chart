@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
-  "description": "Google's stock price over time.",
+  "description": "New builds in England 2006-07 to 2016-17",
   "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/New%20builds%20England.csv"},
   "height": 500,
   "width": 500,
