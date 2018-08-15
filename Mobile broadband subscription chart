@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Total mobile broadband subscriptions per 100 inhabitants in select countries. Japan = best, Hungary = worst. Source: OECD",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/Mobile%20broadband%20subscription.csv"},
+  "height":500,
+  "width":500,
+  
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year", 
+      "type": "temporal",
+      "title": "Year"
+      },
+
+
+    "y": {
+      "field": "Total mobile subscription", 
+      "type": "quantitative",
+      "title": "Subscriptions"
+      },
+
+
+    "color": {
+      "field": "Country", 
+      "type": "nominal"
+      }
+  }
+}
