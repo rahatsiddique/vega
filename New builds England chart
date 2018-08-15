@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Google's stock price over time.",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/New%20builds%20England.csv"},
+  "height": 500,
+  "width": 500,
+  "mark": {
+    "type":"line",
+    "color": "#1DA491"
+    },
+  
+  "encoding": {
+    "x": {
+      "field": "Year", 
+      "type": "temporal"
+      },
+    "y": {
+      "field": "New builds", 
+      "type": "quantitative",
+      "scale": {"domain": [90000, 220000]}
+      }
+  }
+}
