@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Detentions under the Mental Health Act (1983) in 2016/17, crude rate per 100,000 population",
+   "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/Detentions%20under%20MHA%2C%20by%20age.csv"
+  },
+  "height": 500,
+  "width": 500,
+
+  "encoding": {
+    "y": {
+      "field": "Age", 
+      "type": "ordinal",
+      "title": "Age"
+      },
+
+    "x": {
+      "field": "Crude per 100000", 
+      "type": "quantitative",
+      "title": "per 100,000 population"
+      },
+    
+    "color": {
+      "field": "Crude per 100000", 
+      "scale": {"range": ["#011f4b"]},  
+      "type": "nominal",
+      "legend":null
+      }
+  },
+
+  "layer": [{
+    "mark": "bar"
+  }, {
+    "mark": {
+      "type": "text",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 3
+    },
+    "encoding": {
+      "text": {"field": "Crude per 100000", "type": "quantitative"}
+    }
+  }]
+}
