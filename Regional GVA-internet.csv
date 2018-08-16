@@ -1,13 +1,13 @@
-Region name,GVA per capita,Never used internet,,,
-North East,19289,13,,,
-North West,22212,13,,,North West
-Yorks & The Humber,20818,12.1,,,Yorkshire and the Humber
-East Midlands,20952,11.6,,,East Midlands
-West Midlands,21441,12.3,,,West Midlands
-East of England,23919,10.4,,,East of England
-London,43714,8.7,,,London
-South East,28041,8.6,,,South East
-South West,22772,10.6,,,South West
-Wales,18535,14.4,,,Wales
-Scotland,24253,12.8,,,Scotland
-N.Ireland,19803,18.8,,,Northern Ireland
+Region name,GVA per capita,Never used internet
+North East,19289,13
+North West,22212,13
+Yorks & The Humber,20818,12.1
+East Midlands,20952,11.6
+West Midlands,21441,12.3
+East of England,23919,10.4
+London,43714,8.7
+South East,28041,8.6
+South West,22772,10.6
+Wales,18535,14.4
+Scotland,24253,12.8
+N.Ireland,19803,18.8
