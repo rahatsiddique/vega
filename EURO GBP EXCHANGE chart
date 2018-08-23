@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Daily spot exchange rate, Euro into Sterling. Source: bank of England",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/EURO%20GBP%20EXCHANGE.csv"},
+  "height": 500,
+  "width": 500,
+
+  "mark": {
+    "type": "line",
+    "color": "#44a7c8"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "DATE1", 
+      "type": "temporal",
+      "title": "Year"
+      },
+
+    "y": {
+      "field": "XUDLERS", 
+      "type": "quantitative",
+      "title": "Exchange rate",
+      "scale": {"domain":[0.9, 1.90]}
+      }
+  }
+}
