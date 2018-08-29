@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Google's stock price over time.",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/Argentina%20Gross%20Debt%20to%20GDP.csv"},
+  
+  "height": 500,
+  "width": 500,
+  "mark": {
+    "type": "line",
+    "color": "#469db5"
+  },
+  
+  "encoding": {
+    "x": {
+      "field": "Year", 
+      "type": "temporal",
+      "title": "Year"
+      },
+
+    "y": {
+      "field": "DebtPercentGDP", 
+      "type": "quantitative",
+      "title": "% of GDP"
+      }
+  }
+}
