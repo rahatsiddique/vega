@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/English%20student%20data.csv"},
+  "height":500,
+  "width":500,
+  
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Stage",
+          "type": "ordinal",
+          "sort":[]
+        },
+        "y": {
+          "field": "Projections",
+          "type": "quantitative",
+          "scale": {"domain": [0, 7]},
+          "axis": {
+            "grid": false
+          }
+        }
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Stage",
+          "type": "ordinal",
+          "sort":[]
+        },
+        "y": {
+          "field": "AchievedNum",
+          "type": "quantitative",
+          "scale": {"domain": [-3, 6]},
+          "axis": {
+            "grid": false
+          }
+        },
+        "color": {"value": "firebrick"}
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}}
