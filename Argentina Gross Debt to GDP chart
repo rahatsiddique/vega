@@ -20,7 +20,7 @@
     "y": {
       "field": "DebtPercentGDP", 
       "type": "quantitative",
-      "title": "Debt to GDP ratio"
+      "title": "% of GDP"
       }
   }
 }
