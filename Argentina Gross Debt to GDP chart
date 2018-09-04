@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
-  "description": "Google's stock price over time.",
+  "description": "Argentina gross debt to GDP ratio. Source: IMF WEO",
   "data": {"url": "https://raw.githubusercontent.com/rahatsiddique/vega/master/Argentina%20Gross%20Debt%20to%20GDP.csv"},
   
   "height": 500,
